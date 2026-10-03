@@ -1,0 +1,17 @@
+{
+  "ignorePatterns": [
+    "node_modules/",
+    ".ruff_cache/",
+    ".local/",
+    ".DS_Store",
+    "backlog/",
+    "artifacts/",
+    "dist/",
+    "build/",
+    "out/",
+    ".venv/",
+    ".next-router/",
+    ".vscode/",
+    "assets/"
+  ]
+}
