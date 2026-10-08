@@ -1,4 +1,6 @@
 {
+  "tabWidth": 2,
+  "proseWrap": "always",
   "ignorePatterns": [
     "node_modules/",
     ".ruff_cache/",
