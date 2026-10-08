@@ -30,6 +30,8 @@ benefit; handle small or tightly coupled work directly.
 The roster describes roles and permissions. It does not itself launch workers or enforce filesystem
 permissions.
 
+> If the README.md is empty, create the initial one once the project name and topic is clear.
+
 ## Orchestration and assignment
 
 The default agent is the orchestrator.
