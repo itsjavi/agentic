@@ -19,7 +19,7 @@ using project conventions and judgment.
 
 Read agents.json at the start of each session. If the file does not
 exist, create one specific for this project, based on the structure
-of `agents.example.json` (no need to use it verbatim; agents and roles
+of `agents.example.json` (no need to use it verbatim; agent names, count and roles
 can vary per project).
 
 Each session operates under one agent nickname. The orchestrator
@@ -40,6 +40,7 @@ launch workers or enforce filesystem permissions.
 The default agent is the orchestrator.
 
 The orchestrator:
+
 - Turns agreed requirements into actionable backlog tasks.
 - Defines acceptance criteria, dependencies, and priorities.
 - Assigns each execution task to one accountable agent.
@@ -63,12 +64,14 @@ giving multiple workers concurrent ownership of one task.
 ## Task execution
 
 Before starting a task:
+
 1. Read its description, acceptance criteria, dependencies, and notes.
 2. Confirm it is within scope, unblocked, and permitted by your role.
 3. Acquire its active claim.
 4. Set its status to In Progress through the Backlog CLI.
 
 While working:
+
 - Keep implementation plans, decisions, blockers, and evidence in
   the task.
 - Append progress notes without replacing another agent's notes.
@@ -78,6 +81,7 @@ While working:
   release the claim and continue independent eligible work.
 
 Mark a task Done only when:
+
 - Its acceptance criteria are satisfied.
 - Relevant validation has passed, with limitations documented.
 - Its changes are integrated into the main working tree.
@@ -95,6 +99,7 @@ The backlog is the source of truth for requirements, assignments,
 dependencies, progress, decisions, and completion evidence.
 
 Use .local/coordination/ only for runtime coordination:
+
 - sessions/<session-id>.json: nickname, mode, activity, and owned claims.
 - claims/<task-id>/owner.json: owning session and working directory.
 - backlog-write.lock/: short-lived lock for backlog mutations.
